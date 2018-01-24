@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="9Px-Y7-1EL" customClass="UserConversationCellTableViewCell" customModule="Login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Px-Y7-1EL" id="Gw1-FB-x4Y">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is the message bodythis is the message bodythis is the message body" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ekh-Cb-KOo">
+                        <rect key="frame" x="24" y="45" width="272" height="36"/>
+                        <color key="backgroundColor" red="0.12213590000000001" green="0.54512476919999997" blue="0.69608592989999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Added" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isu-Xp-GiE">
+                        <rect key="frame" x="257" y="6" width="57" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="Ekh-Cb-KOo" firstAttribute="top" secondItem="isu-Xp-GiE" secondAttribute="bottom" constant="27" id="B69-QX-iuZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ekh-Cb-KOo" secondAttribute="trailing" constant="8" id="CLH-ad-ybv"/>
+                    <constraint firstItem="Ekh-Cb-KOo" firstAttribute="leading" secondItem="Gw1-FB-x4Y" secondAttribute="leadingMargin" constant="8" id="SgI-zZ-iE5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ekh-Cb-KOo" secondAttribute="bottom" id="ctF-2o-c1V"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="isu-Xp-GiE" secondAttribute="trailing" constant="-10" id="nLi-nc-i01"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="lblDateAdded" destination="isu-Xp-GiE" id="S5V-b6-1qP"/>
+                <outlet property="lblMessageBody" destination="Ekh-Cb-KOo" id="gxt-B3-EYD"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="76"/>
+        </tableViewCell>
+    </objects>
+</document>

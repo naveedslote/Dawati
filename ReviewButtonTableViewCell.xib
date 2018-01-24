@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="ReviewButtonTableViewCell" customModule="Login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5K-3i-EF6">
+                        <rect key="frame" x="8" y="4" width="304" height="32"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="addphoto" translatesAutoresizingMaskIntoConstraints="NO" id="Ysx-eJ-Trg">
+                                <rect key="frame" x="90" y="8" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWI-fC-Rua">
+                                <rect key="frame" x="113" y="6" width="101" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="Add photo or video">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="ldi-YY-lR5"/>
+                            <constraint firstAttribute="width" constant="304" id="u9d-sy-Ww9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAu-Z2-slO">
+                        <rect key="frame" x="261" y="44" width="51" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="BDb-SU-qlk"/>
+                            <constraint firstAttribute="width" constant="51" id="gR4-dt-nma"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <state key="normal" title="Edit Post">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ax-KF-Zh5">
+                        <rect key="frame" x="238" y="47" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="3Lx-sq-2Uo"/>
+                            <constraint firstAttribute="height" constant="15" id="oiE-6T-pP8"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iAu-Z2-slO" secondAttribute="trailing" constant="8" id="JF9-Tm-2GC"/>
+                    <constraint firstItem="t5K-3i-EF6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="MTH-Hn-8Ec"/>
+                    <constraint firstItem="5Ax-KF-Zh5" firstAttribute="top" secondItem="t5K-3i-EF6" secondAttribute="bottom" constant="11" id="ORv-h9-cRW"/>
+                    <constraint firstItem="t5K-3i-EF6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Opb-cd-Z5S"/>
+                    <constraint firstItem="iAu-Z2-slO" firstAttribute="top" secondItem="t5K-3i-EF6" secondAttribute="bottom" constant="8" id="Wfe-93-NoI"/>
+                    <constraint firstItem="iAu-Z2-slO" firstAttribute="leading" secondItem="5Ax-KF-Zh5" secondAttribute="trailing" constant="8" id="bLJ-f1-I4U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="9" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addphoto" width="20" height="17"/>
+    </resources>
+</document>
